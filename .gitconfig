@@ -1,0 +1,21 @@
+[user]
+	name = James Sansbury
+	email = james.sansbury@lullabot.com
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+	wtf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	review = "!sh -c 'git log --oneline --reverse --date=local $0..'"
+	deploy = "!sh -c 'git checkout $0 && git checkout -b $0'"
+
+[core]
+	autocrlf = input
+	editor = /usr/bin/vim
