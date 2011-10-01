@@ -27,9 +27,17 @@ alias gca='git commit -v -a'
 alias gb='git branch'
 alias gba='git branch -a'
 
+# Mac git bash completion.
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+# Git bash completion on other platforms. You'll need to copy
+# git-completion.bash in contrib to /etc/bash_completion.d/
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
+
 
 # If we have private declarations, include them.
 if [ -f ~/.bash_private ]; then
