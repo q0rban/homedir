@@ -7,11 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-PS1='\[\033[1;32m\]\h\[\033[0;33m\] \w\[\033[1;32m\]$(parse_git_branch)\[\033[00m\]: '
+PS1='\[\033[1;36m\]\u\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\]$(__git_ps1 " (%s)")\[\033[00m\]: '
 
 alias la="ls -la"
 alias free="free -m"
@@ -37,7 +33,6 @@ fi
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
-
 
 # If we have private declarations, include them.
 if [ -f ~/.bash_private ]; then
