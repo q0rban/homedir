@@ -7,9 +7,6 @@ fi
 
 # User specific environment and startup programs
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-PS1='\[\033[1;36m\]\u\[\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\] $(__git_ps1 "(%s)")\[\033[00m\]: '
-
 alias la="ls -la"
 alias free="free -m"
 alias key="cat ~/.ssh/id_rsa.pub"
@@ -38,6 +35,14 @@ fi
 # If we have private declarations, include them.
 if [ -f ~/.bash_private ]; then
   . ~/.bash_private
+fi
+
+# Now check for the __git_ps1 function.
+if type -t __git_ps1 &> /dev/null; then
+  export GIT_PS1_SHOWDIRTYSTATE=1
+  PS1='\[\033[1;36m\]\u\[\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\] $(__git_ps1 "(%s)")\[\033[00m\]: '
+else
+  PS1='\[\033[1;36m\]\u\[\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\]\[\033[00m\]: '
 fi
 
 export PATH
