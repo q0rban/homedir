@@ -7,7 +7,8 @@ fi
 
 # User specific environment and startup programs
 
-PS1='\[\033[1;36m\]\u\[\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\]$(__git_ps1 " (%s)")\[\033[00m\]: '
+export GIT_PS1_SHOWDIRTYSTATE=1
+PS1='\[\033[1;36m\]\u\[\033[1;32m\]@\h\[\033[0;33m\] \w\[\033[1;32m\] $(__git_ps1 "(%s)")\[\033[00m\]: '
 
 alias la="ls -la"
 alias free="free -m"
