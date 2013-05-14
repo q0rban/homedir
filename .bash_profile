@@ -91,7 +91,7 @@ esac
 # Now check for the __git_ps1 function.
 if type -t __git_ps1 &> /dev/null; then
   export GIT_PS1_SHOWDIRTYSTATE=1
-  PS1="$COLOR1\u$COLOR2@\h $COLOR3\w $COLOR4$(__git_ps1 "(%s)")$DEFAULTCOLOR: "
+  PS1="$COLOR1\u$COLOR2@\h $COLOR3\w $COLOR4\$(__git_ps1 '(%s)')$DEFAULTCOLOR: "
 else
   PS1="$COLOR1\u$COLOR2@\h $COLOR3\w$DEFAULTCOLOR: "
 fi
