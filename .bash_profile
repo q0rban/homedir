@@ -14,6 +14,7 @@ fi
 alias la="ls -la"
 alias free="free -m"
 alias key="cat ~/.ssh/id_rsa.pub"
+alias tab="~/bin/tab.sh"
 
 # Git Aliases
 alias gst='git status'
