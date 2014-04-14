@@ -30,3 +30,5 @@
 	insteadOf = "lb:"
 [include]
 	path = private/gitconfig
+[help]
+	autocorrect = 1
