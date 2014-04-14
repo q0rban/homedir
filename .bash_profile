@@ -18,7 +18,7 @@ alias tab="~/bin/tab.sh"
 alias ding="say -v Bells 'all done'"
 
 # Git Aliases
-alias gst='git status'
+alias gst='git status -sb'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff | mate'
