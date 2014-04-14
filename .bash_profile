@@ -13,7 +13,7 @@ fi
 
 alias la="ls -la"
 alias free="free -m"
-alias key="cat ~/.ssh/id_rsa.pub"
+alias key="cat ~/.ssh/id_rsa.pub | tee >(pbcopy)"
 alias tab="~/bin/tab.sh"
 alias ding="say -v Bells 'all done'"
 
