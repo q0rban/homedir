@@ -9,6 +9,9 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+# Include global composer binaries
+PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # User specific environment and startup programs
 
 alias la="ls -la"
