@@ -1,25 +1,23 @@
 #!/usr/bin/env bash
 
+workspace="$HOME/Workspace"
+projects="$HOME/Projects"
+
 init() {
   set -e
-  workspace="$HOME/Workspace"
-  projects="$HOME/Projects"
 
-  mkdir -p $workspace $projects
-  cd $workspace
-  git clone https://github.com/q0rban/homedir.git
+  # Init the homedir repo on this computer.
+  init_homedir
   cd
 
   # Symlink some files into ~
-  symlinks="bin .gitconfig"
-  for file in $symlinks; do
-    ln -s $workspace/homedir/$file ~
-  done
-  echo "Symlinked some version controlled files into ~."
+  scaffold_homedir
 
   # Install homebrew
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew bundle --file=$workspace/homedir/Brewfile
+  install_homebrew
+
+  # Use bundle to install the Brewfile.
+  brew_bundle
 
 #  if ! hash xcodebuild 2>/dev/null; then
 #    echo "You must install XCode to continue." 1>&2;
@@ -31,11 +29,58 @@ init() {
 #  sudo xcodebuild -license accept
 
   # Install oh-my-zsh
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
-  echo "Symlinked custom .oh-my-zsh in."
+  install_oh_my_zsh
 
   # Sync from DropBox
+  dropbox_setup
+}
+
+init_homedir() {
+  mkdir -p $workspace $projects
+  cd $workspace
+  if [[ -d $workspace/homedir ]]; then
+    echo "homedir already cloned. Continuing."
+  else
+    cd $workspace
+    git clone https://github.com/q0rban/homedir.git
+  fi
+}
+
+scaffold_homedir() {
+  set +e
+  symlinks="bin .gitconfig"
+  for file in $symlinks; do
+    ln -s $workspace/homedir/$file ~
+  done
+  set -e
+  echo "Symlinked some version controlled files into ~."
+}
+
+install_homebrew() {
+  if hash brew; then
+    echo "Homebrew already installed. Continuing."
+  else
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+}
+
+brew_bundle() {
+  # Make the Brewfile global.
+  ln -s $workspace/homedir/Brewfile $HOME/.Brewfile || echo "Global .Brewfile already exists."
+  brew bundle --global
+}
+
+install_oh_my_zsh() {
+  if [[ -d $HOME/.oh-my-zsh/ ]]; then
+    echo "oh-my-zsh already installed. Continuing."
+  else
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
+    echo "oh-my-zsh installed with custom config."
+  fi
+}
+
+dropbox_setup() {
   while [[ -z "$(find ~ -maxdepth 1 -name 'Dropbox*' -print -quit)" ]]; do
     echo "Unable to find Dropbox folder." 1>&2;
     read -p "Please configure your personal Dropbox account and press enter when done."
