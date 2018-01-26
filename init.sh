@@ -38,12 +38,11 @@ init() {
 init_homedir() {
   mkdir -p $workspace $projects
   cd $workspace
-  if [[ -d $workspace/homedir ]]; then
-    echo "homedir already cloned. Continuing."
-  else
-    cd $workspace
+  if [[ ! -d $workspace/homedir ]]; then
     git clone https://github.com/q0rban/homedir.git
   fi
+  cd homedir
+  git pull
 }
 
 scaffold_homedir() {
