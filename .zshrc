@@ -80,3 +80,6 @@ export PATH="/Users/jsansbury/bin:/Users/jsansbury/.composer/vendor/bin:/usr/loc
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)

@@ -47,7 +47,7 @@ init_homedir() {
 
 scaffold_homedir() {
   set +e
-  symlinks="bin .gitconfig"
+  symlinks="bin .gitconfig .zshrc"
   for file in $symlinks; do
     ln -s $workspace/homedir/$file ~
   done
@@ -78,6 +78,8 @@ install_oh_my_zsh() {
     echo "oh-my-zsh installed with custom config."
   fi
   chsh -s /usr/local/bin/zsh
+  # Force rebuild zcomdump.
+  rm -f ~/.zcompdump; compinit
 }
 
 dropbox_setup() {
