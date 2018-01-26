@@ -1,12 +1,13 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
 init() {
+  set -e
   workspace="$HOME/Workspace"
   projects="$HOME/Projects"
 
   mkdir -p $workspace $projects
   cd $workspace
-  git clone git@github.com:q0rban/homedir.git
+  git clone https://github.com/q0rban/homedir.git
   cd
 
   # Symlink some files into ~
