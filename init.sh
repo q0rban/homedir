@@ -77,6 +77,7 @@ install_oh_my_zsh() {
     ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
     echo "oh-my-zsh installed with custom config."
   fi
+  chsh -s /usr/local/bin/zsh
 }
 
 dropbox_setup() {
