@@ -77,6 +77,9 @@ install_oh_my_zsh() {
     ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
     echo "oh-my-zsh installed with custom config."
   fi
+  grep /usr/local/bin/zsh /etc/shells ||
+    sudo echo "/usr/local/bin/zsh" >> /etc/shells &&
+    echo "Added /usr/local/bin/zsh to /etc/shells."
   chsh -s /usr/local/bin/zsh
   # Force rebuild zcomdump.
   rm -f ~/.zcompdump; compinit
