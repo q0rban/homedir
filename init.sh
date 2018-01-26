@@ -77,12 +77,16 @@ install_oh_my_zsh() {
     ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
     echo "oh-my-zsh installed with custom config."
   fi
-  grep /usr/local/bin/zsh /etc/shells ||
-    sudo echo "/usr/local/bin/zsh" >> /etc/shells &&
-    echo "Added /usr/local/bin/zsh to /etc/shells."
+  sudo add_zsh_to_shells
   chsh -s /usr/local/bin/zsh
   # Force rebuild zcomdump.
   rm -f ~/.zcompdump; compinit
+}
+
+add_zsh_to_shells() {
+  grep /usr/local/bin/zsh /etc/shells ||
+    echo "/usr/local/bin/zsh" >> /etc/shells &&
+    echo "Added /usr/local/bin/zsh to /etc/shells."
 }
 
 dropbox_setup() {
