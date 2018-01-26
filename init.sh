@@ -1,13 +1,13 @@
 #!/bin/bash -e
 
 init() {
-  workspace="~/Workspace"
-  projects="~/Projects"
+  workspace="$HOME/Workspace"
+  projects="$HOME/Projects"
 
   mkdir -p $workspace $projects
   cd $workspace
   git clone git@github.com:q0rban/homedir.git
-  cd ~
+  cd
 
   # Symlink some files into ~
   symlinks="bin .gitconfig"
@@ -20,14 +20,14 @@ init() {
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew bundle --file=$workspace/homedir/Brewfile
 
-  if ! hash xcodebuild 2>/dev/null; then
-    echo "You must install XCode to continue." 1>&2;
-    read -p "Press enter when done."
-  fi
-
-  # Accept XCode license
-  echo "Please enter your administrator password to accept the XCode license."
-  sudo xcodebuild -license accept
+#  if ! hash xcodebuild 2>/dev/null; then
+#    echo "You must install XCode to continue." 1>&2;
+#    read -p "Press enter when done."
+#  fi
+#
+#  # Accept XCode license
+#  echo "Please enter your administrator password to accept the XCode license."
+#  sudo xcodebuild -license accept
 
   # Install oh-my-zsh
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
