@@ -1,0 +1,40 @@
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+	wtf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	review = "!sh -c 'git log --oneline --reverse --date=local $0..'"
+	deploy = "!sh -c 'git checkout $0 && git checkout -b $0'"
+	diverges = !sh -c 'git rev-list --boundary $1...$2 | grep ^- | cut -c2-'
+	since = "!sh -c 'git log --all --author=\"`git config --get user.name`\" --since=\"$0\" --oneline --reverse'"
+	today = !sh -c \"git log --all --author=\\\"`git config --get user.name`\\\" --after=yesterday --oneline --reverse\"
+	destroy = "!sh -c 'read -p \"Are you sure you want to destroy $0? \" VALUE; [[ $VALUE =~ ^[Yy]$ ]] && git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch $0\" --prune-empty --tag-name-filter cat -- --all'"
+	kill-branch = "!sh -c 'read -p \"Are you sure you want to permanently delete branch $0 from origin? \" VALUE; [[ $VALUE =~ ^[Yy]$ ]] || exit 1; git branch -D \"$0\";  git push origin :\"$0\"'"
+	changelog = "!f() { r=${1:-`git describe --tags --abbrev=0`..HEAD}; echo Changelog for $r; git log --reverse --no-merges --format='* %s' $r; }; f"
+	qa = "!sh -c 'git checkout master; git pull; git checkout $0; git pull; git checkout master; git branch -D $0-q0rban-qa; git checkout -b $0-q0rban-qa; git merge $0 -m \"Test merge of master into $0.\"'"
+[core]
+	autocrlf = input
+	editor = /usr/bin/vim
+[merge]
+	tool = opendiff
+[rerere]
+	enabled = 1
+[url "http://git.drupal.org/project/"]
+	insteadOf = "dp:"
+[url "git@github.com:Lullabot/"]
+	insteadOf = "lb:"
+[include]
+	path = private/gitconfig
+[help]
+	autocorrect = 1
+[push]
+	default = current
+[user]
+	signingkey = 4E2865C3
