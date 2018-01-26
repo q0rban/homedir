@@ -49,6 +49,7 @@ brew "yarn"
 brew "zsh"
 brew "ahoy-cli/tap/ahoy"
 cask "1password-cli"
+cask "dropbox"
 cask "java"
 mas "1Password", id: 443987910
 mas "Fetcher", id: 440113616
@@ -56,5 +57,5 @@ mas "iA Writer Classic", id: 439623248
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Twitter", id: 409789998
+mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
