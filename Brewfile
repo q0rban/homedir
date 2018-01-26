@@ -73,7 +73,7 @@ cask "sequel-pro"
 cask "slack"
 cask "tunnelblick"
 cask "virtualbox"
-cask "zoom"
+cask "zoomus"
 cask "vagrant"
 cask "caskroom/fonts/font-fira-mono-for-powerline"
 mas "1Password", id: 443987910
