@@ -76,6 +76,7 @@ cask "virtualbox"
 cask "zoomus"
 cask "vagrant"
 cask "caskroom/fonts/font-fira-mono-for-powerline"
+cask "caskroom/fonts/font-menlo-for-powerline"
 mas "1Password", id: 443987910
 mas "Fetcher", id: 440113616
 mas "iA Writer Classic", id: 439623248
