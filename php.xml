@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <component name="PhpCodeSniffer">
-    <option name="phpCodeSnifferPath" value="/usr/local/bin/phpcs" />
-    <option name="standards" value="Drupal;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" />
-  </component>
-</application>
-
