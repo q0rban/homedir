@@ -1,0 +1,691 @@
+<templateSet group="Zen CSS">
+  <template name="bdls" value="border-left-style:$VAR0$;" description="border-left-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdlw" value="border-left-width:$VAR0$;" description="border-left-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdlc" value="border-left-color:$VAR0$;" description="border-left-color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="whsc" value="white-space-collapse:$VAR0$;" description="white-space-collapse:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdtlrs" value="border-top-left-radius:$VAR0$;" description="border-top-left-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdblrs" value="border-bottom-left-radius:$VAR0$;" description="border-bottom-left-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tw" value="text-wrap:$VAR0$;" description="text-wrap:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tt" value="text-transform:$VAR0$;" description="text-transform:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="z" value="z-index:$VAR0$;" description="z-index:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tr" value="text-replace:$VAR0$;" description="text-replace:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="to" value="text-outline:$VAR0$;" description="text-outline:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tj" value="text-justify:$VAR0$;" description="text-justify:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="th" value="text-height:$VAR0$;" description="text-height:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="td" value="text-decoration:$VAR0$;" description="text-decoration:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="te" value="text-emphasis:$VAR0$;" description="text-emphasis:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ta" value="text-align:$VAR0$;" description="text-align:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bxz" value="box-sizing:$VAR0$;" description="box-sizing:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="f" value="font:$VAR0$;" description="font:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bb" value="border-bottom:$VAR0$;" description="border-bottom:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="list" value="list-style-type:$VAR0$;" description="list-style-type:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="p" value="padding:$VAR0$;" description="padding:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdf" value="border-fit:$VAR0$;" description="border-fit:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdc" value="border-color:$VAR0$;" description="border-color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdc:t" value="border-color:transparent;" description="border-color:transparent;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="bl" value="border-left:$VAR0$;" description="border-left:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdl" value="border-left:$VAR0$;" description="border-left:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdlen" value="border-length:$VAR0$;" description="border-length:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="@m" value="@media print {&#10;  $VAR0$&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdw" value="border-width:$VAR0$;" description="border-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pgbb" value="page-break-before:$VAR0$;" description="page-break-before:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bds" value="border-style:$VAR0$;" description="border-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="br" value="border-right:$VAR0$;" description="border-right:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdr" value="border-right:$VAR0$;" description="border-right:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pgbi" value="page-break-inside:$VAR0$;" description="page-break-inside:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mr" value="margin-right:$VAR0$;" description="margin-right:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="wid" value="widows:$VAR0$;" description="widows:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fef" value="font-effect:$VAR0$;" description="font-effect:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fem" value="font-emphasize:$VAR0$;" description="font-emphasize:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="oc:i" value="outline-color:invert;" description="outline-color:invert;" toReformat="true" toShortenFQNames="true" />
+  <template name="ti" value="text-indent:$VAR0$;" description="text-indent:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ml" value="margin-left:$VAR0$;" description="margin-left:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mb" value="margin-bottom:$VAR0$;" description="margin-bottom:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdtrrs" value="border-top-right-radius:$VAR0$;" description="border-top-right-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mt" value="margin-top:$VAR0$;" description="margin-top:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="v" value="visibility:$VAR0$;" description="visibility:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tal" value="text-align-last:$VAR0$;" description="text-align-last:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bdl:a" value="border-length:auto;" description="border-length:auto;" toReformat="true" toShortenFQNames="true" />
+  <template name="ovs" value="overflow-style:$VAR0$;" description="overflow-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fs" value="font-style:$VAR0$;" description="font-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="maw" value="max-width:$VAR0$;" description="max-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fw" value="font-weight:$VAR0$;" description="font-weight:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ovx" value="overflow-x:$VAR0$;" description="overflow-x:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ovy" value="overflow-y:$VAR0$;" description="overflow-y:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ff" value="font-family:$VAR0$;" description="font-family:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ov" value="overflow:$VAR0$;" description="overflow:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mah" value="max-height:$VAR0$;" description="max-height:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fl" value="float:$VAR0$;" description="float:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="q" value="quotes:$VAR0$;" description="quotes:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lh" value="line-height:$VAR0$;" description="line-height:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bsha" value="-webkit-box-shadow: $VAR0$ $VAR1$ $VAR2$ $VAR3$;&#10;-moz-box-shadow: $VAR0$ $VAR1$ $VAR2$ $VAR3$;&#10;-ms-box-shadow: $VAR0$ $VAR1$ $VAR2$ $VAR3$;&#10;box-shadow: $VAR0$ $VAR1$ $VAR2$ $VAR3$;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="l" value="left:$VAR0$;" description="left:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdbk" value="border-break:$VAR0$;" description="border-break:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdbc" value="border-bottom-color:$VAR0$;" description="border-bottom-color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ec" value="empty-cells:$VAR0$;" description="empty-cells:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdbs" value="border-bottom-style:$VAR0$;" description="border-bottom-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdbw" value="border-bottom-width:$VAR0$;" description="border-bottom-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fv" value="font-variant:$VAR0$;" description="font-variant:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lisi" value="list-style-image:$VAR0$;" description="list-style-image:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="rz" value="resize:$VAR0$;" description="resize:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fz" value="font-size:$VAR0$;" description="font-size:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="orp" value="orphans:$VAR0$;" description="orphans:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lts" value="letter-spacing:$VAR0$;" description="letter-spacing:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdts" value="border-top-style:$VAR0$;" description="border-top-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdtw" value="border-top-width:$VAR0$;" description="border-top-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdtc" value="border-top-color:$VAR0$;" description="border-top-color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="w" value="width:$VAR0$;" description="width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdbrrs" value="border-bottom-right-radius:$VAR0$;" description="border-bottom-right-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bgz:cv" value="background-size:cover;" description="background-size:cover;" toReformat="true" toShortenFQNames="true" />
+  <template name="bgz:ct" value="background-size:contain;" description="background-size:contain;" toReformat="true" toShortenFQNames="true" />
+  <template name="b" value="bottom:$VAR0$;" description="bottom:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="r" value="right:$VAR0$;" description="right:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mih" value="min-height:$VAR0$;" description="min-height:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lis" value="list-style:$VAR0$;" description="list-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="miw" value="min-width:$VAR0$;" description="min-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="whs" value="white-space:$VAR0$;" description="white-space:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdb" value="border-bottom:$VAR0$;" description="border-bottom:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="m" value="margin:$VAR0$;" description="margin:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pgba" value="page-break-after:$VAR0$;" description="page-break-after:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bt" value="border-top:$VAR0$;" description="border-top:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdt" value="border-top:$VAR0$;" description="border-top:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="tbl" value="table-layout:$VAR0$;" description="table-layout:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bxsh:n" value="box-shadow:none;" description="box-shadow:none;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="bxsh:m" value="-moz-box-shadow:0 0 0 0 #000;" description="-moz-box-shadow:0 0 0 0 #000;" toReformat="true" toShortenFQNames="true" />
+  <template name="h" value="height:$VAR0$;" description="height:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bxsh:w" value="-webkit-box-shadow:0 0 0 #000;" description="-webkit-box-shadow:0 0 0 #000;" toReformat="true" toShortenFQNames="true" />
+  <template name="m:2" value="margin:0 0;" description="margin:0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="wow" value="word-wrap:$VAR0$;" description="word-wrap:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="wos" value="word-spacing:$VAR0$;" description="word-spacing:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="wob" value="word-break:$VAR0$;" description="word-break:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="m:4" value="margin:0 0 0 0;" description="margin:0 0 0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="m:0" value="margin:0;" description="margin:0;" toReformat="true" toShortenFQNames="true" />
+  <template name="m:3" value="margin:0 0 0;" description="margin:0 0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="bgcp" value="background-clip:$VAR0$;" description="background-clip:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="c" value="color:$VAR0$;" description="color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cor" value="counter-reset:$VAR0$;" description="counter-reset:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="brad" value="-webkit-border-radius: $VAR0$;&#10;-moz-border-radius: $VAR0$;&#10;-ms-border-radius: $VAR0$;&#10;border-radius: $VAR0$;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="coi" value="counter-increment:$VAR0$;" description="counter-increment:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cl" value="clear:$VAR0$;" description="clear:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="femp" value="font-emphasize-position:$VAR0$;" description="font-emphasize-position:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fems" value="font-emphasize-style:$VAR0$;" description="font-emphasize-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bxsh" value="box-shadow: $VAR0$ $VAR1$ $VAR2$ $VAR3$;" description="box-shadow:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdsp" value="border-spacing:$VAR0$;" description="border-spacing:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cp" value="clip:$VAR0$;" description="clip:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cn" value="content:$VAR0$;" description="content:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="ct" value="content:$VAR0$;" description="content:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pr" value="padding-right:$VAR0$;" description="padding-right:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cp:r" value="clip:rect($VAR0$);" description="clip:rect(...);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pt" value="padding-top:$VAR0$;" description="padding-top:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pb" value="padding-bottom:$VAR0$;" description="padding-bottom:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pl" value="padding-left:$VAR0$;" description="padding-left:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="rz:v" value="resize:vertical;" description="resize:vertical;" toReformat="true" toShortenFQNames="true" />
+  <template name="rz:n" value="resize:none;" description="resize:none;" toReformat="true" toShortenFQNames="true" />
+  <template name="rz:h" value="resize:horizontal;" description="resize:horizontal;" toReformat="true" toShortenFQNames="true" />
+  <template name="rz:b" value="resize:both;" description="resize:both;" toReformat="true" toShortenFQNames="true" />
+  <template name="va" value="vertical-align:$VAR0$;" description="vertical-align:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cur" value="cursor:$VAR0$;" description="cursor:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="wob:bs" value="word-break:break-strict;" description="word-break:break-strict;" toReformat="true" toShortenFQNames="true" />
+  <template name="pos" value="position:$VAR0$;" description="position:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="d" value="display:$VAR0$;" description="display:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="t" value="top:$VAR0$;" description="top:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="p:4" value="padding:0 0 0 0;" description="padding:0 0 0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="bgz:a" value="background-size:auto;" description="background-size:auto;" toReformat="true" toShortenFQNames="true" />
+  <template name="bgbk" value="background-break:$VAR0$;" description="background-break:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="p:0" value="padding:0;" description="padding:0;" toReformat="true" toShortenFQNames="true" />
+  <template name="p:3" value="padding:0 0 0;" description="padding:0 0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="p:2" value="padding:0 0;" description="padding:0 0;" toReformat="true" toShortenFQNames="true" />
+  <template name="bd" value="border:$VAR0$;" description="border:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="wob:l" value="word-break:loose;" description="word-break:loose;" toReformat="true" toShortenFQNames="true" />
+  <template name="oo" value="outline-offset:$VAR0$;" description="outline-offset:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bga" value="background-attachment:$VAR0$;" description="background-attachment:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bgc" value="background-color:$VAR0$;" description="background-color:#fff;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#fff&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="oc" value="outline-color:$VAR0$;" description="outline-color:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="o" value="outline:$VAR0$;" description="outline:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bgo" value="background-origin:$VAR0$;" description="background-origin:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bgr" value="background-repeat:$VAR0$;" description="background-repeat:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ow" value="outline-width:$VAR0$;" description="outline-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bgz" value="background-size:$VAR0$;" description="background-size:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="os" value="outline-style:$VAR0$;" description="outline-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="op" value="opacity:$VAR0$;" description="opacity:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fza" value="font-size-adjust:$VAR0$;" description="font-size-adjust:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdrz" value="border-radius:$VAR0$;" description="border-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bdrs" value="border-radius:$VAR0$;" description="border-radius:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdrst" value="border-right-style:$VAR0$;" description="border-right-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdrw" value="border-right-width:$VAR0$;" description="border-right-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdrc" value="border-right-color:$VAR0$;" description="border-right-color:#000;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;#000&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="o:n" value="outline:none;" description="outline:none;" toReformat="true" toShortenFQNames="true" />
+  <template name="bg" value="background:$VAR0$;" description="background:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdcl" value="border-collapse:$VAR0$;" description="border-collapse:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lisp" value="list-style-position:$VAR0$;" description="list-style-position:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bdi:m" value="-moz-border-image:url($VAR0$) 0 0 0 0 stretch stretch;" description="-moz-border-image:url(...) 0 0 0 0 stretch stretch;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bdi:w" value="-webkit-border-image:url($VAR0$) 0 0 0 0 stretch stretch;" description="-webkit-border-image:url(...) 0 0 0 0 stretch stretch;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="bgpy" value="background-position-y:$VAR0$;" description="background-position-y:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bgpx" value="background-position-x:$VAR0$;" description="background-position-x:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fsm" value="font-smooth:$VAR0$;" description="font-smooth:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fst" value="font-stretch:$VAR0$;" description="font-stretch:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cps" value="caption-side:$VAR0$;" description="caption-side:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mar" value="max-resolution:$VAR0$;" description="max-resolution:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mir" value="min-resolution:$VAR0$;" description="min-resolution:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ori" value="orientation:$VAR0$;" description="orientation:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trf:t" value="transform: translate($VAR0$, $VAR1$);" description="transform: translate(x, y);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;y&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trf:tx" value="transform: translateX($VAR0$);" description="transform: translateX(x);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trf:ty" value="transform: translateY($VAR0$);" description="transform: translateY(y);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;y&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="anim" value="animation:$VAR0$;" description="animation:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colm" value="columns:$VAR0$;" description="columns:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmc" value="column-count:$VAR0$;" description="column-count:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmf" value="column-fill:$VAR0$;" description="column-fill:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmg" value="column-gap:$VAR0$;" description="column-gap:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmr" value="column-rule:$VAR0$;" description="column-rule:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmrc" value="column-rule-color:$VAR0$;" description="column-rule-color:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmrs" value="column-rule-style:$VAR0$;" description="column-rule-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmrw" value="column-rule-width:$VAR0$;" description="column-rule-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colms" value="column-span:$VAR0$;" description="column-span:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="colmw" value="column-width:$VAR0$;" description="column-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ol" value="outline:$VAR0$;" description="outline:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="olo" value="outline-offset:$VAR0$;" description="outline-offset:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="olw" value="outline-width:$VAR0$;" description="outline-width:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ols" value="outline-style:$VAR0$;" description="outline-style:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="bgsz" value="background-size:$VALUE$;" description="background-size:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cnt" value="content:'$VAR0$';" description="content:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ta-lst" value="text-align-last:$VAR0$;" description="text-align-last:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trfo" value="transform-origin:$VAR0$;" description="transform-origin:...;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

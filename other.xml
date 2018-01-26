@@ -1,0 +1,62 @@
+<application>
+  <component name="CodeStyleSchemes">
+    <option name="CURRENT_SCHEME_NAME" value="Default" />
+  </component>
+  <component name="CppTools.Settings" gccPath="gcc" clangPath="clang" msvcdir="c:\Program Files\Microsoft Visual Studio .NET 2012\vc10" defines="WIN32;NDEBUG;_WINDOWS;_MBCS;_AFXDLL;_WIN32" launchGdbOnFailureCommand="/usr/X11/bin/xterm -e $gdb$ --directory=&quot;~/CF-C&quot;" gdbPath="gdb" />
+  <component name="CvsApplicationLevelConfiguration">
+    <option name="PATH_TO_PASSWORD_FILE" value="$userdir/.cvspass" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/5.6.0/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.10.21/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.8.18/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.8.11/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.6.18/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.6.15/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/0.4.12/bin/node" />
+  </component>
+  <component name="PhpRefactoringSettings">
+    <option name="RENAME_SEARCH_NON_CODE_FOR_METHOD" value="true" />
+    <option name="RENAME_SEARCH_NON_CODE_FOR_FUNCTION" value="true" />
+    <option name="RENAME_SEARCH_IN_COMMENTS_FOR_CONSTANT" value="true" />
+    <option name="RENAME_SEARCH_NON_CODE_FOR_CONSTANT" value="true" />
+  </component>
+  <component name="RecentTaskRepositories">
+    <JIRA shared="false" url="https://sspgdev.atlassian.net">
+      <option name="apiType" value="REST_2_0" />
+      <commitMessageFormat>{id} {summary}</commitMessageFormat>
+      <password>dfffdfe7dfd9dfdfdff0dfcedfecdf95dfe6dfc1df89dffbdf98dfd9dffddfebdfefdfdbdfcddfdfdfc3dfdbdfebdf92dfdadfc7dfd0dff3dfeddfcfdfe8dfeb</password>
+      <option name="jiraVersion" value="1000.305.0" />
+      <option name="loginAnonymously" value="false" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="searchQuery" value="assignee = currentUser() and resolution = Unresolved order by id" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="useHttpAuthentication" value="true" />
+      <option name="useProxy" value="false" />
+      <username>james</username>
+    </JIRA>
+  </component>
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl">
+    <recent_templates>
+      <option name="RECENT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </recent_templates>
+  </component>
+  <component name="com.intellij.javaee.ExternalResourceManagerImpl">
+    <ignored-resource url="http://relaxng.org/ns/compatibility/annotations/1.0" />
+    <ignored-resource url="urn:idea:xslt-plugin#extensions" />
+    <ignored-resource url="http://www.w3.org/1998/Math/MathML" />
+    <ignored-resource url="http://exslt.org/dates-and-times" />
+    <ignored-resource url="http://exslt.org/math" />
+    <ignored-resource url="http://exslt.org/dynamic" />
+    <ignored-resource url="http://exslt.org/common" />
+    <ignored-resource url="http://exslt.org/sets" />
+    <ignored-resource url="http://exslt.org/strings" />
+    <ignored-resource url="http://www.w3.org/2000/svg" />
+  </component>
+</application>

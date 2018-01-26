@@ -1,0 +1,136 @@
+<templateSet group="user">
+  <template name="dt" value="t('$END$')" description="Drupal t()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="info" value="name = $MODULE_NAME$&#10;description = $DESCRIPTION$&#10;dependencies[] = $DEPENDENCY$&#10;package = $PACKAGE$&#10;core = 7.x&#10;" description="Drupal Info File" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEPENDENCY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="moden" value="if (!drupal_check_module('$MODULE$')) {&#10;  throw new DrupalUpdateException('$MODULENAME$ does not have requirements needed to be enabled.');&#10;}&#10;module_enable(array('$MODULE$'));&#10;return t('Enabled $MODULENAME$ module.');" description="Enable a module in an update hook" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="p" value="&lt;?php print $VALUE$; ?&gt;" description="PHP print" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="&lt;?php if ($STATEMENT$): ?&gt;&#10;  $BLOCK$&#10;&lt;?php endif; ?&gt;" description="&lt;?php if (); ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BLOCK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="d7db" value="$databases['default']['default'] = array(&#10;  'driver' =&gt; 'mysql',&#10;  'database' =&gt; '$DATABASE$',&#10;  'username' =&gt; 'sandbox',&#10;  'password' =&gt; 'sandbox',&#10;  'host' =&gt; 'localhost',&#10;  'prefix' =&gt; '',&#10;);" description="Drupal 7 Database array" toReformat="false" toShortenFQNames="true">
+    <variable name="DATABASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fnc" value="function $NAME$($ARGS$) {&#10;  $END$&#10;}" shortcut="TAB" description="function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="drush" value="/**&#10; * @file&#10; * Drush commands for $MODULE$ module.&#10; */&#10;&#10;/**&#10; * Implements hook_drush_help().&#10; */&#10;function $HOOK$_drush_help($section) {&#10;  switch ($section) {&#10;    case 'drush:$COMMAND$':&#10;      return dt('$DESCRIPTION$');&#10;  }&#10;}&#10;&#10;/**&#10; * Implements hook_drush_command().&#10; */&#10;function $HOOK$_drush_command() {&#10;  $items['$COMMAND$'] = array(&#10;    'description' =&gt; '$DESCRIPTION$',&#10;  );&#10;&#10;  return $items;&#10;}&#10;&#10;/**&#10; * Command callback for drush $COMMAND$.&#10; */&#10;function drush_$HOOK$_$COMMAND$() {&#10;  $END$&#10;}&#10;" description="New Drush command file" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HOOK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMMAND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="doc" value="/**&#10; * $END$&#10; */" shortcut="TAB" description="Docblock" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="param" value="&#10;* @param $TYPE$ $VARIABLE$&#10;*   $DESCRIPTION$" description="docblock parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="watchdog" value="$message = '$ERRORMESSAGE$';&#10;$t_args = array($ARGS$);&#10;watchdog($ID$, $message, $t_args, $ERRORLEVEL$);" description="Drupal watchdog message" toReformat="false" toShortenFQNames="true">
+    <variable name="ERRORMESSAGE" expression="" defaultValue="An error was detected." alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="__FUNCTION__" alwaysStopAt="true" />
+    <variable name="ERRORLEVEL" expression="" defaultValue="WATCHDOG_WARNING" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook" value="Implements hook_$END$()." description="Hook docblock text" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="behavior" value="(function ($) {&#10;  Drupal.behaviors.$NAME$ = {&#10;    attach: function(context, settings) {&#10;      $('$SELECTOR$', context)$NEXT$;&#10;    }&#10;  };&#10;})(jQuery);&#10;" description="Drupal 7 Javascript behavior" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="myBehavior" alwaysStopAt="true" />
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ddt" value="dt('$END$')" description="Drush dt()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="getopts" value="# Parse through all options for this script.&#10;while getopts “c:ht:x” OPTION; do&#10;&#9;case $OPTION in&#10;&#9;&#9;c)&#10;&#9;&#9;&#9;concurrency=$OPTARG&#10;&#9;&#9;&#9;validate_int $concurrency &quot;Concurrency&quot;&#10;&#9;&#9;&#9;echo &quot;Concurrency set to $concurrency.&quot;&#10;&#9;&#9;&#9;;;&#10;&#9;&#9;t)&#10;&#9;&#9;&#9;time=$OPTARG&#10;&#9;&#9;&#9;# Ensure time is an integer.&#10;&#9;&#9;&#9;validate_int $time &quot;Time&quot;&#10;&#9;&#9;&#9;echo &quot;Time limit set to $time.&quot;&#10;&#9;&#9;&#9;;;&#10;&#9;&#9;x)&#10;&#9;&#9;&#9;set -x&#10;&#9;&#9;&#9;echo &quot;Xtracing enabled.&quot;&#10;&#9;&#9;&#9;;;&#10;&#9;&#9;*)&#10;&#9;&#9;&#9;usage&#10;&#9;&#9;&#9;exit&#10;&#9;&#9;&#9;;;&#10;&#9;esac&#10;done&#10;&#10;# Remove the switches we parsed above from the arguments.&#10;shift `expr $OPTIND - 1`" description="Bash parse command line options" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="dbt" value="$transaction = db_transaction();&#10;try {&#10;  $SELECTION$&#10;}&#10;catch (Exception $e) {&#10;  $transaction-&gt;rollback();&#10;  throw $e;&#10;}&#10;unset($transaction);" description="Wrap code in db_transaction." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="phpunit" value="/**&#10; * @file&#10; * Contains \$CLASSNAME$.&#10; */&#10;&#10;use PHPUnit\Framework\TestCase;&#10;&#10;/**&#10; * Unit tests for $MODULENAME$ module.&#10; */&#10;class $CLASSNAME$ extends TestCase {&#10;  $END$&#10;}" description="Drupal PHPUnit test." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="d8db" value="$databases['default']['default'] = [&#10;  'driver' =&gt; 'mysql',&#10;  'database' =&gt; '$DATABASE$',&#10;  'username' =&gt; 'root',&#10;  'password' =&gt; '',&#10;  'host' =&gt; '127.0.0.1',&#10;  'prefix' =&gt; '',&#10;];" description="Drupal 8 Database array" toReformat="false" toShortenFQNames="true">
+    <variable name="DATABASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
