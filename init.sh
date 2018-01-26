@@ -33,6 +33,8 @@ init() {
 
   # Sync from DropBox
   dropbox_setup
+
+  finish_up
 }
 
 init_homedir() {
@@ -49,7 +51,7 @@ scaffold_homedir() {
   set +e
   symlinks="bin .gitconfig .zshrc"
   for file in $symlinks; do
-    ln -s $workspace/homedir/$file ~
+    ln -s $workspace/homedir/$file $HOME
   done
   set -e
   echo "Symlinked some version controlled files into ~."
@@ -74,7 +76,7 @@ install_oh_my_zsh() {
     echo "oh-my-zsh already installed. Continuing."
   else
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ln -sf $workspace/homedir/oh-my-zsh/custom ~/.oh-my-zsh
+    ln -sf $workspace/homedir/oh-my-zsh/custom $HOME/.oh-my-zsh
     echo "oh-my-zsh installed with custom config."
   fi
   sudo bash -c 'grep /usr/local/bin/zsh /etc/shells ||
@@ -91,14 +93,19 @@ dropbox_setup() {
 
   # Symlink DropBox/Syncs/private to homedir.
   printf "Please select the Dropbox folder to use:\n"
-  select dropbox_dir in ~/Dropbox*; do test -n "$dropbox_dir" && break; echo ">>> Invalid Selection"; done
-  ln -s "$dropbox_dir/Syncs/private" ~ || echo "~/private already exists."
+  select dropbox_dir in $HOME/Dropbox*; do test -n "$dropbox_dir" && break; echo ">>> Invalid Selection"; done
+  ln -s "$dropbox_dir/Syncs/private" $HOME || echo "~/private already exists."
   echo "Synced private files to ~/private."
 
   # List out other syncs to configure.
   echo "Here are other syncs you may want to configure."
   ls "$dropbox_dir/Syncs" | grep -v private
   read -p "Press enter to continue."
+}
+
+finish_up() {
+  pandoc $HOME/private/setup-info.md --from gfm | lynx -stdin
+  echo "We're all done!"
 }
 
 err_report() {
