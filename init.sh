@@ -55,6 +55,7 @@ scaffold_homedir() {
   done
   set -e
   echo "Symlinked some version controlled files into ~."
+  sudo bash -c "echo $HOME/bin > /etc/paths.d/homebin"
 }
 
 install_homebrew() {
