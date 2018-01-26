@@ -48,6 +48,7 @@ brew "wget"
 brew "yarn"
 brew "zsh"
 brew "ahoy-cli/tap/ahoy"
+cask "1password-cli"
 cask "java"
 mas "1Password", id: 443987910
 mas "Fetcher", id: 440113616
