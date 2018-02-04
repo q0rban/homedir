@@ -22,6 +22,7 @@
 [core]
 	autocrlf = input
 	editor = /usr/bin/vim
+	excludesfile = /Users/jsansbury/.gitignore
 [merge]
 	tool = opendiff
 [rerere]
