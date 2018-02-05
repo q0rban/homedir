@@ -109,7 +109,7 @@ finish_up() {
   sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
   sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
   pandoc $HOME/private/setup-info.md --from gfm | lynx -stdin
-  read -p "We're all done! Press enter to install all software updates and reboot."
+  read -p "Almost done! Press enter to install all software updates and reboot."
   sudo sh -c "softwareupdate -ia && reboot"
 }
 
