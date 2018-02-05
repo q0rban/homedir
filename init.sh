@@ -34,6 +34,8 @@ init() {
   # Sync from DropBox
   dropbox_setup
 
+  update_software
+
   finish_up
 }
 
@@ -104,7 +106,14 @@ dropbox_setup() {
   read -p "Press enter to continue."
 }
 
+update_software() {
+  sudo softwareupdate --install --all
+}
+
 finish_up() {
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setblockall on
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
   pandoc $HOME/private/setup-info.md --from gfm | lynx -stdin
   echo "We're all done!"
 }
