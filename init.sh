@@ -95,6 +95,8 @@ dropbox_setup() {
   # Symlink DropBox/Syncs/private to homedir.
   printf "Please select the Dropbox folder to use:\n"
   select dropbox_dir in $HOME/Dropbox*; do test -n "$dropbox_dir" && break; echo ">>> Invalid Selection"; done
+  mkdir -p "$dropbox_dir/Syncs/private"
+  chmod -R go-rwx "$dropbox_dir/Syncs/private"
   ln -s "$dropbox_dir/Syncs/private" $HOME || echo "~/private already exists."
   echo "Synced private files to ~/private."
 
