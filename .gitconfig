@@ -25,6 +25,7 @@
 	excludesfile = /Users/jsansbury/.gitignore
 [merge]
 	tool = opendiff
+	renamelimit = 1560
 [rerere]
 	enabled = 1
 [url "http://git.drupal.org/project/"]
