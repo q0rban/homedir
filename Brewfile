@@ -87,6 +87,7 @@ cask "homebrew/cask-fonts/font-menlo-for-powerline"
 mas "1Password", id: 443987910
 mas "Bible Study", id: 472790630
 mas "Fetcher", id: 440113616
+mas "Freckle", id: 879917538
 mas "iA Writer Classic", id: 439623248
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
