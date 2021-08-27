@@ -14,11 +14,14 @@
 	deploy = "!sh -c 'git checkout $0 && git checkout -b $0'"
 	diverges = !sh -c 'git rev-list --boundary $1...$2 | grep ^- | cut -c2-'
 	since = "!sh -c 'git log --all --author=\"`git config --get user.name`\" --since=\"$0\" --oneline --reverse'"
+	add = "!f() { git add $@; git status; }; f"
 	today = !sh -c \"git log --all --author=\\\"`git config --get user.name`\\\" --after=yesterday --oneline --reverse\"
 	destroy = "!sh -c 'read -p \"Are you sure you want to destroy $0? \" VALUE; [[ $VALUE =~ ^[Yy]$ ]] && git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch $0\" --prune-empty --tag-name-filter cat -- --all'"
 	kill-branch = "!sh -c 'read -p \"Are you sure you want to permanently delete branch $0 from origin? \" VALUE; [[ $VALUE =~ ^[Yy]$ ]] || exit 1; git branch -D \"$0\";  git push origin :\"$0\"'"
 	changelog = "!f() { r=${1:-`git describe --tags --abbrev=0`..HEAD}; echo Changelog for $r; git log --reverse --no-merges --format='* %s' $r; }; f"
 	qa = "!sh -c 'git checkout master; git pull; git checkout $0; git pull; git checkout master; git branch -D $0-q0rban-qa; git checkout -b $0-q0rban-qa; git merge $0 -m \"Test merge of master into $0.\"'"
+	init = !git init && git symbolic-ref HEAD refs/heads/main
+	new = !git init && git symbolic-ref HEAD refs/heads/main
 [core]
 	autocrlf = input
 	editor = /usr/bin/vim
@@ -32,6 +35,8 @@
 	insteadOf = "dp:"
 [url "git@github.com:Lullabot/"]
 	insteadOf = "lb:"
+[url "git@github.com:TugboatQA/"]
+	insteadOf = "tb:"
 [include]
 	path = private/gitconfig
 [help]
@@ -40,3 +45,5 @@
 	default = current
 [user]
 	signingkey = 4E2865C3
+[url "git@github.com:"]
+	insteadOf = https://github.com/

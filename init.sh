@@ -77,7 +77,7 @@ install_oh_my_zsh() {
     echo "oh-my-zsh already installed. Continuing."
   else
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ln -sf $workspace/homedir/oh-my-zsh/custom $HOME/.oh-my-zsh
+    rsync -av $workspace/homedir/oh-my-zsh/custom/ $HOME/.oh-my-zsh/custom
     echo "oh-my-zsh installed with custom config."
   fi
   sudo bash -c 'grep /usr/local/bin/zsh /etc/shells ||
