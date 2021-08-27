@@ -1,3 +1,5 @@
 .idea
 # Ignore cached vim files.
 *~
+# Mac junk
+.DS_Store
