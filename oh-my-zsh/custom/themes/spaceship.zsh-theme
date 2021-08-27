@@ -1,0 +1,1 @@
+/Users/jsansbury/Workspace/homedir/oh-my-zsh/spaceship-prompt/spaceship.zsh-theme
