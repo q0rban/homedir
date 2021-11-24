@@ -1,7 +1,4 @@
 tap "homebrew/core"
-tap "homebrew/php"
-tap "homebrew/versions"
-tap "homebrew/boneyard"
 tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
