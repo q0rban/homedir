@@ -67,7 +67,7 @@ cask "slack"
 cask "tunnelblick"
 cask "vagrant"
 cask "virtualbox"
-cask "zoomus"
+cask "zoom"
 cask "homebrew/cask-fonts/font-fira-mono-for-powerline"
 cask "homebrew/cask-fonts/font-menlo-for-powerline"
 mas "1Password", id: 443987910
