@@ -70,7 +70,7 @@ cask "virtualbox"
 cask "zoom"
 cask "homebrew/cask-fonts/font-fira-mono-for-powerline"
 cask "homebrew/cask-fonts/font-menlo-for-powerline"
-mas "1Password", id: 443987910
+mas "1Password", id: 1333542190
 mas "iA Writer Classic", id: 439623248
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
