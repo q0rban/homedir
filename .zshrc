@@ -83,3 +83,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
