@@ -66,11 +66,13 @@ cask "iterm2"
 cask "licecap"
 cask "notion"
 cask "tunnelblick"
+cask "vagrant"
 cask "webstorm"
 cask "zoom"
 mas "iA Writer Classic", id: 439623248
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
+mas "Moom", id: 419330170
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
