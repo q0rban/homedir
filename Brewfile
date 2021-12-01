@@ -15,7 +15,7 @@ brew "python@3.9"
 brew "cmake"
 brew "colordiff"
 brew "composer"
-brew "coreutils", link: false
+brew "coreutils"
 brew "docutils"
 brew "libogg"
 brew "libevent"
