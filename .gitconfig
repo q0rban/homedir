@@ -45,4 +45,8 @@
 [push]
 	default = current
 [user]
-	signingkey = 4E2865C3
+	signingkey = 301BDF7F4E2865C3
+	email = james@lullabot.com
+	name = James Sansbury
+[commit]
+	gpgsign = true
