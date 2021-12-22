@@ -37,7 +37,6 @@ brew "libxslt"
 brew "lynx"
 brew "mas"
 brew "md5sha1sum"
-brew "node"
 brew "node@14", link: true
 brew "pandoc"
 brew "parallel"
