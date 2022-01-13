@@ -10,7 +10,6 @@ alias ddrusha='docker-compose exec --user 82 php drush $*'
 # New Vagrant Project
 alias nvp='git clone git@github.com:Lullabot/trusty32-lamp.git'
 
-
 # Lullabot / Tugboat servers ssh
 alias tm1="ss manager1"
 alias tm2="ss manager2"
@@ -31,6 +30,18 @@ alias tsm2="ss manager2.stage.tugboat.qa"
 alias tsm3="ss manager3.stage.tugboat.qa"
 alias t1x='ss 1xinternet.tugboat.qa'
 
+alias tugboat-down='ssh -t irongoat.local "sudo shutdown now"'
+export tugboat-up() {
+  wakeonlan 54:b2:03:83:97:56
+  printf "Waiting for sshd to start."
+  while ! nc -z irongoat.local 22 &> /dev/null; do
+    sleep 1;
+    printf "."
+  done
+  printf "\nReady for connections!\n"
+}
+alias tugboat-ssh="tugboat-up && ssh irongoat.local"
+
 # SSH to a host and su as root.
 export ss() {
   if [[ -z "$1" ]]; then
@@ -47,3 +58,45 @@ export ss() {
   )
 }
 
+prompt_ldap_password() {
+  echo "[sudo] password for $(whoami):"
+  stty_orig=$(stty -g)
+  stty -echo
+  read -r ldap_password
+  stty "$stty_orig"
+}
+
+export tmdb() {
+  prompt_ldap_password
+
+  manager_server=$(expect -c "$(
+     cat <<- EOF
+       log_user 0
+       set timeout -1
+       spawn ssh -t manager1.tugboat.qa "sudo docker service ps tugboat-mongo --filter='desired-state=running' --format='{{.Node}}'"
+       match_max 100000
+       expect {
+         -ex "Are you sure you want to continue connecting (yes/no/\[fingerprint\])?" {
+           send -- "yes\r"
+           send -- "\r"
+           exp_continue
+         }
+         "*?assword*" {
+           send -- "${ldap_password}\r"
+           send -- "\r"
+           exp_continue
+         }
+         -re {(manager[0-9]\.tugboat\.qa)} {
+           set output \$expect_out(1,string)
+         }
+       }
+       expect eof
+       log_user 1
+       puts "\$output"
+       lassign [wait] pid spawnid os_error_flag value
+       exit \$value
+EOF
+  )")
+  echo "SSHing to $manager_server..."
+  ssh -t $manager_server 'sudo sh -c "docker exec -it \$(docker ps --filter \"name=\$(docker service ps tugboat-mongo --filter='desired-state=running' --format='{{.Name}}')\" -q) mongo"'
+}
